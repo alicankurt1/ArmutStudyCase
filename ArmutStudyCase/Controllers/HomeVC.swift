@@ -11,9 +11,22 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        getHomeJsonData()
     }
-
+    
+    /// Get Home Json Data
+    private func getHomeJsonData(){
+        let url = URL(string: "https://my-json-server.typicode.com/engincancan/case/home")!
+        JsonWebService.shared.downloadHomeJsonData(withUrl: url) { result in
+            switch result{
+            case .success(let homeJsonData):
+                print(homeJsonData)
+            case .failure(let error):
+                print("Failed to get HomeJsonData Error: \(error)")
+            }
+        }
+    }
 
 }
 

@@ -13,6 +13,8 @@
 		0B61D42A272D31CF00C9FC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B61D428272D31CF00C9FC14 /* Main.storyboard */; };
 		0B61D42C272D31D000C9FC14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B61D42B272D31D000C9FC14 /* Assets.xcassets */; };
 		0B61D42F272D31D000C9FC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B61D42D272D31D000C9FC14 /* LaunchScreen.storyboard */; };
+		0B61D43D272D353F00C9FC14 /* HomeJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D43C272D353F00C9FC14 /* HomeJsonModel.swift */; };
+		0B61D43F272D369C00C9FC14 /* JsonWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D43E272D369C00C9FC14 /* JsonWebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0B61D42B272D31D000C9FC14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B61D42E272D31D000C9FC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B61D430272D31D000C9FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B61D43C272D353F00C9FC14 /* HomeJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeJsonModel.swift; sourceTree = "<group>"; };
+		0B61D43E272D369C00C9FC14 /* JsonWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonWebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		0B61D437272D320400C9FC14 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0B61D43E272D369C00C9FC14 /* JsonWebService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		0B61D438272D320D00C9FC14 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0B61D43C272D353F00C9FC14 /* HomeJsonModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 			files = (
 				0B61D427272D31CF00C9FC14 /* HomeVC.swift in Sources */,
 				0B61D423272D31CF00C9FC14 /* AppDelegate.swift in Sources */,
+				0B61D43F272D369C00C9FC14 /* JsonWebService.swift in Sources */,
+				0B61D43D272D353F00C9FC14 /* HomeJsonModel.swift in Sources */,
 				0B61D425272D31CF00C9FC14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
