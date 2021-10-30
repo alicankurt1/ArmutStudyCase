@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "Ekran Resmi 2021-10-29 12.46.08.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
