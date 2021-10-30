@@ -15,6 +15,9 @@
 		0B61D42F272D31D000C9FC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B61D42D272D31D000C9FC14 /* LaunchScreen.storyboard */; };
 		0B61D43D272D353F00C9FC14 /* HomeJsonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D43C272D353F00C9FC14 /* HomeJsonModel.swift */; };
 		0B61D43F272D369C00C9FC14 /* JsonWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D43E272D369C00C9FC14 /* JsonWebService.swift */; };
+		0B61D441272D504800C9FC14 /* ServiceColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D440272D504800C9FC14 /* ServiceColViewCell.swift */; };
+		0B61D443272D507100C9FC14 /* PopularColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D442272D507100C9FC14 /* PopularColViewCell.swift */; };
+		0B61D445272D508900C9FC14 /* PostColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D444272D508900C9FC14 /* PostColViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		0B61D430272D31D000C9FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B61D43C272D353F00C9FC14 /* HomeJsonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeJsonModel.swift; sourceTree = "<group>"; };
 		0B61D43E272D369C00C9FC14 /* JsonWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonWebService.swift; sourceTree = "<group>"; };
+		0B61D440272D504800C9FC14 /* ServiceColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceColViewCell.swift; sourceTree = "<group>"; };
+		0B61D442272D507100C9FC14 /* PopularColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularColViewCell.swift; sourceTree = "<group>"; };
+		0B61D444272D508900C9FC14 /* PostColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostColViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 		0B61D439272D321400C9FC14 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0B61D440272D504800C9FC14 /* ServiceColViewCell.swift */,
+				0B61D442272D507100C9FC14 /* PopularColViewCell.swift */,
+				0B61D444272D508900C9FC14 /* PostColViewCell.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -196,7 +205,10 @@
 				0B61D423272D31CF00C9FC14 /* AppDelegate.swift in Sources */,
 				0B61D43F272D369C00C9FC14 /* JsonWebService.swift in Sources */,
 				0B61D43D272D353F00C9FC14 /* HomeJsonModel.swift in Sources */,
+				0B61D441272D504800C9FC14 /* ServiceColViewCell.swift in Sources */,
 				0B61D425272D31CF00C9FC14 /* SceneDelegate.swift in Sources */,
+				0B61D443272D507100C9FC14 /* PopularColViewCell.swift in Sources */,
+				0B61D445272D508900C9FC14 /* PostColViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
