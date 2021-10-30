@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0B4F7A21272D842700D3D305 /* ServiceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F7A20272D842700D3D305 /* ServiceDetailsVC.swift */; };
+		0B4F7A23272D862E00D3D305 /* ServiceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F7A22272D862E00D3D305 /* ServiceInfo.swift */; };
+		0B4F7A25272D8EF500D3D305 /* ServiceDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F7A24272D8EF500D3D305 /* ServiceDetailsModel.swift */; };
 		0B61D423272D31CF00C9FC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D422272D31CF00C9FC14 /* AppDelegate.swift */; };
 		0B61D425272D31CF00C9FC14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D424272D31CF00C9FC14 /* SceneDelegate.swift */; };
 		0B61D427272D31CF00C9FC14 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D426272D31CF00C9FC14 /* HomeVC.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		0B4F7A20272D842700D3D305 /* ServiceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsVC.swift; sourceTree = "<group>"; };
+		0B4F7A22272D862E00D3D305 /* ServiceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInfo.swift; sourceTree = "<group>"; };
+		0B4F7A24272D8EF500D3D305 /* ServiceDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsModel.swift; sourceTree = "<group>"; };
 		0B61D41F272D31CF00C9FC14 /* ArmutStudyCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmutStudyCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B61D422272D31CF00C9FC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B61D424272D31CF00C9FC14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				0B61D43C272D353F00C9FC14 /* HomeJsonModel.swift */,
+				0B4F7A22272D862E00D3D305 /* ServiceInfo.swift */,
+				0B4F7A24272D8EF500D3D305 /* ServiceDetailsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,9 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4F7A25272D8EF500D3D305 /* ServiceDetailsModel.swift in Sources */,
 				0B61D427272D31CF00C9FC14 /* HomeVC.swift in Sources */,
 				0B61D423272D31CF00C9FC14 /* AppDelegate.swift in Sources */,
 				0B61D43F272D369C00C9FC14 /* JsonWebService.swift in Sources */,
+				0B4F7A23272D862E00D3D305 /* ServiceInfo.swift in Sources */,
 				0B61D43D272D353F00C9FC14 /* HomeJsonModel.swift in Sources */,
 				0B4F7A21272D842700D3D305 /* ServiceDetailsVC.swift in Sources */,
 				0B61D441272D504800C9FC14 /* ServiceColViewCell.swift in Sources */,

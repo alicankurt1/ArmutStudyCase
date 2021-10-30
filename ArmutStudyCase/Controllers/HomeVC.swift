@@ -107,6 +107,34 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let homeJsonModel = homeJsonModel{
+            switch collectionView{
+            case self.servicesColView:
+                /// Go to ServiceDetailsVC with Service_id
+                ServiceInfo.shared.choosenServiceId = homeJsonModel.all_services[indexPath.row].service_id
+                performSegue(withIdentifier: "toServiceDetailsVC", sender: nil)
+            case self.popularColView:
+                /// Go to ServiceDetailsVC with Service_id
+                ServiceInfo.shared.choosenServiceId = homeJsonModel.popular[indexPath.row].service_id
+                performSegue(withIdentifier: "toServiceDetailsVC", sender: nil)
+            case self.postsColView:
+                /// Go to Web Browser         
+                let link = homeJsonModel.posts[indexPath.row].link
+                if let url = URL(string: link){
+                    if #available(iOS 10.0, *) {
+                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                    } else {
+                        UIApplication.shared.openURL(url)
+                    }
+                }
+            default:
+                print("Failed to didSelecItemAt in Switch Case")
+            }
+        }
+ 
+    }
+    
     
 }
 
