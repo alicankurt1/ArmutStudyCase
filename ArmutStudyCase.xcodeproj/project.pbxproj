@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B4F7A21272D842700D3D305 /* ServiceDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4F7A20272D842700D3D305 /* ServiceDetailsVC.swift */; };
 		0B61D423272D31CF00C9FC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D422272D31CF00C9FC14 /* AppDelegate.swift */; };
 		0B61D425272D31CF00C9FC14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D424272D31CF00C9FC14 /* SceneDelegate.swift */; };
 		0B61D427272D31CF00C9FC14 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D426272D31CF00C9FC14 /* HomeVC.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B4F7A20272D842700D3D305 /* ServiceDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsVC.swift; sourceTree = "<group>"; };
 		0B61D41F272D31CF00C9FC14 /* ArmutStudyCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArmutStudyCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B61D422272D31CF00C9FC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B61D424272D31CF00C9FC14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0B61D426272D31CF00C9FC14 /* HomeVC.swift */,
+				0B4F7A20272D842700D3D305 /* ServiceDetailsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,7 +146,6 @@
 				57AAFE270934A22515B698EB /* Pods-ArmutStudyCase.debug.xcconfig */,
 				163ED9D6398F7CAAE1B6CA43 /* Pods-ArmutStudyCase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -274,6 +276,7 @@
 				0B61D423272D31CF00C9FC14 /* AppDelegate.swift in Sources */,
 				0B61D43F272D369C00C9FC14 /* JsonWebService.swift in Sources */,
 				0B61D43D272D353F00C9FC14 /* HomeJsonModel.swift in Sources */,
+				0B4F7A21272D842700D3D305 /* ServiceDetailsVC.swift in Sources */,
 				0B61D441272D504800C9FC14 /* ServiceColViewCell.swift in Sources */,
 				0B61D425272D31CF00C9FC14 /* SceneDelegate.swift in Sources */,
 				0B61D443272D507100C9FC14 /* PopularColViewCell.swift in Sources */,
