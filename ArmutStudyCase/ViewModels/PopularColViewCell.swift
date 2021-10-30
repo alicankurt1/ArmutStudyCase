@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PopularColViewCell: UICollectionViewCell {
     @IBOutlet weak var popularImageView: UIImageView!
@@ -13,7 +14,9 @@ class PopularColViewCell: UICollectionViewCell {
     
     
     public func configurePopularCell(withPopularInfo popularInfo: Popular){
-        popularImageView.image = UIImage(named: "header")
+        DispatchQueue.main.async {
+            self.popularImageView.sd_setImage(with: URL(string: popularInfo.image_url))
+        }
         popularTitleLabel.text = popularInfo.name
     }
     

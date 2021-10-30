@@ -18,6 +18,7 @@
 		0B61D441272D504800C9FC14 /* ServiceColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D440272D504800C9FC14 /* ServiceColViewCell.swift */; };
 		0B61D443272D507100C9FC14 /* PopularColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D442272D507100C9FC14 /* PopularColViewCell.swift */; };
 		0B61D445272D508900C9FC14 /* PostColViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B61D444272D508900C9FC14 /* PostColViewCell.swift */; };
+		D81FA5049305E2F7AEC86877 /* Pods_ArmutStudyCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A3115CD0D34CE6CD8C424A /* Pods_ArmutStudyCase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		0B61D440272D504800C9FC14 /* ServiceColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceColViewCell.swift; sourceTree = "<group>"; };
 		0B61D442272D507100C9FC14 /* PopularColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularColViewCell.swift; sourceTree = "<group>"; };
 		0B61D444272D508900C9FC14 /* PostColViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostColViewCell.swift; sourceTree = "<group>"; };
+		163ED9D6398F7CAAE1B6CA43 /* Pods-ArmutStudyCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutStudyCase.release.xcconfig"; path = "Target Support Files/Pods-ArmutStudyCase/Pods-ArmutStudyCase.release.xcconfig"; sourceTree = "<group>"; };
+		57AAFE270934A22515B698EB /* Pods-ArmutStudyCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArmutStudyCase.debug.xcconfig"; path = "Target Support Files/Pods-ArmutStudyCase/Pods-ArmutStudyCase.debug.xcconfig"; sourceTree = "<group>"; };
+		88A3115CD0D34CE6CD8C424A /* Pods_ArmutStudyCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArmutStudyCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81FA5049305E2F7AEC86877 /* Pods_ArmutStudyCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				0B61D421272D31CF00C9FC14 /* ArmutStudyCase */,
 				0B61D420272D31CF00C9FC14 /* Products */,
+				4D3F4D56F83696767F5898FA /* Pods */,
+				FAF5EB2F0DA6791F11AE6FA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,24 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4D3F4D56F83696767F5898FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57AAFE270934A22515B698EB /* Pods-ArmutStudyCase.debug.xcconfig */,
+				163ED9D6398F7CAAE1B6CA43 /* Pods-ArmutStudyCase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FAF5EB2F0DA6791F11AE6FA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88A3115CD0D34CE6CD8C424A /* Pods_ArmutStudyCase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B61D433272D31D000C9FC14 /* Build configuration list for PBXNativeTarget "ArmutStudyCase" */;
 			buildPhases = (
+				D5B1D69CA821D43850648DDA /* [CP] Check Pods Manifest.lock */,
 				0B61D41B272D31CF00C9FC14 /* Sources */,
 				0B61D41C272D31CF00C9FC14 /* Frameworks */,
 				0B61D41D272D31CF00C9FC14 /* Resources */,
+				2E45E53B96AE76262EC9A46E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +222,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E45E53B96AE76262EC9A46E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArmutStudyCase/Pods-ArmutStudyCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArmutStudyCase/Pods-ArmutStudyCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArmutStudyCase/Pods-ArmutStudyCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5B1D69CA821D43850648DDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArmutStudyCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B61D41B272D31CF00C9FC14 /* Sources */ = {
@@ -352,6 +421,7 @@
 		};
 		0B61D434272D31D000C9FC14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57AAFE270934A22515B698EB /* Pods-ArmutStudyCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -381,6 +451,7 @@
 		};
 		0B61D435272D31D000C9FC14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163ED9D6398F7CAAE1B6CA43 /* Pods-ArmutStudyCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

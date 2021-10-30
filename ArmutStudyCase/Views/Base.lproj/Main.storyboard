@@ -145,7 +145,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Service">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="11" name="DINAlternate-Bold"/>
+                                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -204,7 +204,7 @@
                                                             <attributedString key="attributedText">
                                                                 <fragment content="Popular Title">
                                                                     <attributes>
-                                                                        <font key="NSFont" size="11" name="DINAlternate-Bold"/>
+                                                                        <font key="NSFont" size="13" name="DINAlternate-Bold"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -248,7 +248,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j6G-kR-Rte">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j6G-kR-Rte">
                                                             <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="150" id="Wjn-Xd-h2q"/>
@@ -271,7 +271,7 @@
                                                                 <fragment content="BLOG CATEGORY">
                                                                     <attributes>
                                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="11" name="DINAlternate-Bold"/>
+                                                                        <font key="NSFont" size="14" name="DINAlternate-Bold"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -287,7 +287,7 @@
                                                                 <fragment content="Blog Title">
                                                                     <attributes>
                                                                         <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                        <font key="NSFont" size="11" name="DINAlternate-Bold"/>
+                                                                        <font key="NSFont" size="15" name="DINAlternate-Bold"/>
                                                                         <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                                     </attributes>
                                                                 </fragment>

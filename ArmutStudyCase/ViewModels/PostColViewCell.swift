@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class PostColViewCell: UICollectionViewCell {
     @IBOutlet weak var postImageView: UIImageView!
@@ -13,7 +14,9 @@ class PostColViewCell: UICollectionViewCell {
     @IBOutlet weak var postTitleLabel: UILabel!
     
     public func configurePostCell(withPostInfo postInfo: Posts){
-        postImageView.image = UIImage(named: "header")
+        DispatchQueue.main.async {
+            self.postImageView.sd_setImage(with: URL(string: postInfo.image_url))
+        }
         postCategoryLabel.text = postInfo.category
         postTitleLabel.text = postInfo.title
     }
