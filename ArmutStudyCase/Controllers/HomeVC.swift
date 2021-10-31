@@ -25,6 +25,8 @@ class HomeVC: UIViewController {
     
     /// Assign essential delegates
     private func assignDelegates(){
+        navigationItem.title = "Armut Study Case"
+        
         discountImageView.isUserInteractionEnabled = true
         let discountRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedDiscountView))
         discountImageView.addGestureRecognizer(discountRecognizer)
