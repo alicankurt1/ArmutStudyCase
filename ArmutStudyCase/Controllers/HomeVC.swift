@@ -86,8 +86,10 @@ class HomeVC: UIViewController {
 }
 
 
-// MARK: Collection View Operations
+// MARK: Extension HomeVC -> Collection View Operations
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    /// Return number of array
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let homeJsonModel = homeJsonModel{
             switch collectionView{
@@ -106,6 +108,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
 
     }
     
+    /// Assign variables to related cell
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let homeJsonModel = homeJsonModel{
             switch collectionView{
@@ -139,6 +142,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
         }
     }
     
+    /// What to do when a cell is selected
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let homeJsonModel = homeJsonModel{
             switch collectionView{
@@ -164,9 +168,7 @@ extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
                 print("Failed to didSelecItemAt in Switch Case")
             }
         }
- 
     }
-    
     
 }
 
