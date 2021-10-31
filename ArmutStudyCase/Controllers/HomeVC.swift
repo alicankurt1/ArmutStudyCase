@@ -9,6 +9,7 @@ import UIKit
 
 class HomeVC: UIViewController {
     
+    @IBOutlet weak var discountImageView: UIImageView!
     @IBOutlet weak var servicesColView: UICollectionView!
     @IBOutlet weak var popularColView: UICollectionView!
     @IBOutlet weak var postsColView: UICollectionView!
@@ -18,15 +19,16 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
-        tabBarController?.tabBar.frame =
-        
         assignDelegates()
         getHomeJsonData()
     }
     
     /// Assign essential delegates
     private func assignDelegates(){
+        discountImageView.isUserInteractionEnabled = true
+        let discountRecognizer = UITapGestureRecognizer(target: self, action: #selector(tappedDiscountView))
+        discountImageView.addGestureRecognizer(discountRecognizer)
+        
         servicesColView.delegate = self
         servicesColView.dataSource = self
         popularColView.delegate = self
@@ -60,6 +62,13 @@ class HomeVC: UIViewController {
         }
     }
     
+    /// Tapped Discount Image View and Go to Service Details Page with ServiceId ( Wedding )
+    @objc private func tappedDiscountView(){
+        let dugunId = 59
+        ServiceInfo.shared.choosenServiceId = dugunId
+        performSegue(withIdentifier: "toServiceDetailsVC", sender: nil)
+    }
+    
     /// Make Alert If Json file didn't download
     private func makeAlertToDidntDownloadJson(){
         let alert = UIAlertController(title: "404 Not Found", message: "The homepage could not be loaded successfully", preferredStyle: .alert)
@@ -74,9 +83,10 @@ class HomeVC: UIViewController {
         alert.addAction(cancel)
         self.present(alert, animated: true, completion: nil)
     }
-    
 }
 
+
+// MARK: Collection View Operations
 extension HomeVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if let homeJsonModel = homeJsonModel{
