@@ -18,6 +18,9 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+      
+        tabBarController?.tabBar.frame =
+        
         assignDelegates()
         getHomeJsonData()
     }
@@ -36,11 +39,11 @@ class HomeVC: UIViewController {
     private func getHomeJsonData(){
         let url = URL(string: "https://my-json-server.typicode.com/engincancan/case/home")!
         JsonWebService.shared.downloadHomeJsonData(withUrl: url) {[weak self] result in
+            guard let strongSelf = self else{
+                return
+            }
             switch result{
             case .success(let homeJsonData):
-                guard let strongSelf = self else{
-                    return
-                }
                 strongSelf.homeJsonModel = homeJsonData
                 DispatchQueue.main.async {
                     strongSelf.servicesColView.reloadData()
@@ -49,8 +52,27 @@ class HomeVC: UIViewController {
                 }
             case .failure(let error):
                 print("Failed to get HomeJsonData Error: \(error)")
+                DispatchQueue.main.async {
+                    strongSelf.makeAlertToDidntDownloadJson()
+                }
+                
             }
         }
+    }
+    
+    /// Make Alert If Json file didn't download
+    private func makeAlertToDidntDownloadJson(){
+        let alert = UIAlertController(title: "404 Not Found", message: "The homepage could not be loaded successfully", preferredStyle: .alert)
+        let retry = UIAlertAction(title: "Retry", style: .default) { [weak self] _ in
+            guard let strongSelf = self else{
+                return
+            }
+            strongSelf.getHomeJsonData()
+        }
+        let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        alert.addAction(retry)
+        alert.addAction(cancel)
+        self.present(alert, animated: true, completion: nil)
     }
     
 }

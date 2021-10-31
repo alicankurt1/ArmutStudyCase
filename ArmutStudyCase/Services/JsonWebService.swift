@@ -41,7 +41,7 @@ extension JsonWebService{
 
 extension JsonWebService{
     /// Download Json Data using URLSession and return [ServiceDetailsModel] or Error
-    public func downloadServiceDetailsJsonData(withUrl url: URL, completion: @escaping (Result<[ServiceDetailsModel], Error>) -> Void){
+    public func downloadServiceDetailsJsonData(withUrl url: URL, completion: @escaping (Result<ServiceDetailsModel, Error>) -> Void){
         URLSession.shared.dataTask(with: url) { data, urlResponse, error in
             guard error == nil else{
                 completion(.failure(JsonWebServiceError.FailedToGetFromURLSession))
@@ -49,7 +49,7 @@ extension JsonWebService{
             }
             if let data = data {
                 do {
-                    let serviceDetailsJsonList = try JSONDecoder().decode([ServiceDetailsModel].self, from: data)
+                    let serviceDetailsJsonList = try JSONDecoder().decode(ServiceDetailsModel.self, from: data)
                     completion(.success(serviceDetailsJsonList))
                 } catch{
                     completion(.failure(JsonWebServiceError.FailedToGetFromJSONDecoder))
